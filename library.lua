@@ -75,9 +75,10 @@ local Library do
         FadeSpeed = 0.2,
 
         Folders = {
-            Directory = "lds13",
-            Configs = "lds13/Configs",
-            Assets = "lds13/Assets",
+    Directory = "MULTIFARM",
+    Configs = "MULTIFARM/Configs",
+    Assets = "MULTIFARM/Assets",
+},
         },
 
         -- Ignore below
