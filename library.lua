@@ -75,9 +75,9 @@ local Library do
         FadeSpeed = 0.2,
 
         Folders = {
-            Directory = "lds13",
-            Configs = "lds13/Configs",
-            Assets = "lds13/Assets",
+            Directory = "MULTIFARM",
+            Configs = "MULTIFARM/Configs",
+            Assets = "MULTIFARM/Assets",
         },
 
         -- Ignore below
@@ -201,9 +201,9 @@ local Library do
 
     -- Folders
     local Folders = {
-        Directory = "lds13",
-        Configs = "lds13/Configs",
-        Assets = "lds13/Assets",
+        Directory = "MULTIFARM",
+        Configs = "MULTIFARM/Configs",
+        Assets = "MULTIFARM/Assets",
     }
     
     for Index, Value in Folders do 
@@ -1948,7 +1948,7 @@ local Library do
             local Window = {
                 Name = Data.Name or Data.name or "Window",
                 TimeRemaining = Data.TimeRemaining or 0,
-                SubTitle = Data.SubTitle or Data.subtitle or "LDS13",
+                SubTitle = Data.SubTitle or Data.subtitle or "MULTIFARM",
                 
                 Pages = { },
                 Items = { },
