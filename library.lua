@@ -1847,21 +1847,23 @@ local Library do
                         ApplyStrokeMode = Enum.ApplyStrokeMode.Border
                     })  Items["Stroke"]:AddToTheme({Color = "Outline"})
                     
-                    Items["Title"] = Instances:Create("TextLabel", {
-    Parent = Items["Bottom"].Instance,
+                   -- Di bagian Notification, ganti bagian ini:
+
+Items["Title"] = Instances:Create("TextLabel", {
+    Parent = Items["Notification"].Instance,  -- <-- Ganti dari Items["Bottom"] ke Items["Notification"]
     Name = "\0",
     FontFace = Library.Font,
     TextColor3 = FromRGB(255, 255, 255),
     BorderColor3 = FromRGB(0, 0, 0),
-    Text = Window.Name,
+    Text = Name,  -- <-- Ganti dari Window.Name ke Name (parameter fungsi)
     Size = UDim2New(0, 0, 0, 15),
     BackgroundTransparency = 1,
-    Position = UDim2New(0, 12, 0, 10),
+    Position = UDim2New(0, 24, 0, 8),  -- <-- Sesuaikan posisi karena ikon di kiri
     BorderSizePixel = 0,
     AutomaticSize = Enum.AutomaticSize.X,
     TextSize = 18,
     BackgroundColor3 = FromRGB(255, 255, 255),
-    RichText = true,  -- <-- AKTIFKAN RICHTEXT
+    RichText = true,  -- <-- RichText tetap aktif
 })  Items["Title"]:AddToTheme({TextColor3 = "Text"})
                     
                     Items["Icon"] = Instances:Create("ImageLabel", {
